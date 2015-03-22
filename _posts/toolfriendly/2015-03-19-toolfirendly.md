@@ -2,7 +2,8 @@
 layout: post
 title: "Tool-friendly Scala code. What? Why?"
 date: 2015-03-19 22:00:00
-categories: jekyll
+category: toolfriendly
+tags: [toolfreidnly scala]
 featured_image: /images/cover.jpg
 ---
 
