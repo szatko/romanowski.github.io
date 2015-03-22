@@ -1,15 +1,15 @@
 ---
 layout: post
 title: "Tool-friendly pattern match?"
-date: 2015-03-19 22:00:00
+date: 2015-03-20 22:00:00
 category: toolfriendly
 tags: [toolfreidnly, scala, pattern-match]
 featured_image: /images/cover.jpg
 ---
 ## Toolfriendly pattermaching
-Pattern matching
+Pattern matching is one of the feature that we love in Scala. Is it toolfridndly?
 
-Standard Scala code:
+Let's look at standard patternmatch:
 
 ```scala
 foo match {
@@ -18,8 +18,7 @@ foo match {
   case _ => ???
 } 
 ```
-
-Nice one - that is why we love Scala. How tools would like to see the code?
+How tools would like to see the code?
 
 ```scala
 foo match {
@@ -83,10 +82,11 @@ Let's take a look at case statement in byte code:
      109: aload         8
 ```
 
+
 Pretty much to do in one line assuming that we want to check if our case is hit. So we put a breakpoint in our case line. And what - it is hit everytime condition is being checked!
 Why? Checking the condition is also in our line - so tooling get information "I was there".
 
-### Conclusion:
+## Conclusion
 
 Let's write cases in this way:
 
