@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "Tool-friendly pattern match?"
+title: "Tool-friendly pattern matching?"
 date: 2015-03-20 22:00:00
 category: toolfriendly
 tags: [toolfreidnly, scala, pattern-match]
 featured_image: /images/cover.jpg
 ---
-## Toolfriendly pattermaching
-Pattern matching is one of the feature that we love in Scala. Is it toolfridndly?
+## Toolfriendly pattern matching
+Pattern matching is one of the feature that we love in Scala. Is it toolfriendly?
 
-Let's look at standard patternmatch:
+Let's look at standard pattern match:
 
 ```scala
 foo match {
@@ -34,8 +34,8 @@ foo match {
 } 
 ```
 
-Only difference is line breaking. It is not python so why it matters?
-Tools like code coverage or debuggers usually use JDI. And JDI is line-based - every line of bytecode has it's mapping to a line in source code.
+Only difference is line breaking. It is not python so why does it matters?
+Tools like code coverage or debuggers usually use JDI. And JDI is line-based - every line of bytecode has its mapping to a line in source code.
 
 Let's take a look at case statement in byte code:
 
@@ -83,7 +83,7 @@ Let's take a look at case statement in byte code:
 ```
 
 
-Pretty much to do in one line assuming that we want to check if our case is hit. So we put a breakpoint in our case line. And what - it is hit everytime condition is being checked!
+Pretty much to do in one line assuming that we want to check if our case is hit. So we put a breakpoint in our case line. And what - it is hit every time condition is being checked!
 Why? Checking the condition is also in our line - so tooling get information "I was there".
 
 ## Conclusion

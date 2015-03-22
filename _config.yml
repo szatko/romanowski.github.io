@@ -1,6 +1,6 @@
 # Site settings
 title: 'Typosafe' # Your Title
-tagline: "Where Scala code reveal it's nature" # A brief tagline for your site
+tagline: "Where Scala code reveal its nature" # A brief tagline for your site
 sidebar_image: /images/cover.jpg
 
 # Build settings
