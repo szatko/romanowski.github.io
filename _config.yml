@@ -7,3 +7,6 @@ sidebar_image: /images/cover.jpg
 markdown: redcarpet
 highlighter: pygments
 #baseurl: /blog # the subpath of your site, e.g. /blog/
+
+gems:
+  - jekyll-sitemap
