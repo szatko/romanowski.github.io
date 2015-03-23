@@ -345,3 +345,12 @@ ul.posts .meta {
 ul.posts p {
   margin-bottom: 36px;
 }
+
+.icon {
+    margin-right: 3px
+}
+.icon svg {
+        width: 16px;
+        height: 16px;
+    }
+}

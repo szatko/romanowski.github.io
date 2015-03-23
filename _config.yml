@@ -1,6 +1,7 @@
 # Site settings
 title: 'Typosafe' # Your Title
 tagline: "Where Scala code reveal its nature" # A brief tagline for your site
+description: 'Scala code focused blog'
 sidebar_image: /images/cover.jpg
 
 # Build settings
@@ -10,3 +11,8 @@ highlighter: pygments
 
 gems:
   - jekyll-sitemap
+
+email: 'romanowski.kr@gmail.com'
+github_username: romanowski
+twitter_username: RomanowskiKr
+
