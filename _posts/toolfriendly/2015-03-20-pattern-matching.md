@@ -37,7 +37,7 @@ foo match {
 The only difference is line breaking. It is not python so why does it matter?
 Tools like code coverage or debuggers usually use JDI and JDI is line-based - every line of the bytecode has its mapping to a line in the source code.
 
-Let's take a look at case statement in byte code:
+Let's take a look at a case statement in byte code:
 
 ```asm
       18: instanceof    #15                 // class test/Bar
