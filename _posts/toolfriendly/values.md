@@ -9,7 +9,7 @@ featured_image: /images/cover.jpg
 
 # Values, values everywhere
 
-The basic feature of any language is a cvalue. It allows us to reuse the results of computation, names and many more. So how to use them to make our code more tool-friendly?
+The basic feature of any language is a value. It allows us to reuse the results of computation, names and many more. So how to use them to make our code more tool-friendly?
 
 Let's look at a "real-world" example. We have to format and pretty print polish mobile numbers. Like this:
 
