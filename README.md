@@ -1,1 +1,2 @@
-TODO
+Krzysztof Romanowski's blog. TODO
+
