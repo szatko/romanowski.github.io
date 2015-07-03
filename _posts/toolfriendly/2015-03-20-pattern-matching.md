@@ -18,7 +18,7 @@ foo match {
   case _ => ???
 } 
 ```
-How tools would like to see the code?
+How would tools like to see the code?
 
 ```scala
 foo match {
@@ -34,9 +34,7 @@ foo match {
 } 
 ```
 
-The only difference is line breaking. It is not python so why does it matter?
-Tools like code coverage or debuggers usually use JDI and JDI is line-based - every line of the bytecode has its mapping to a line in the source code.
-
+The only difference is line breaking, but this isn’t python so why does it matter? Tools like code coverage or debuggers usually use JDI, which is line-based: every line of the bytecode has its mapping to a line in the source code.
 Let's take a look at a case statement in byte code:
 
 ```asm
@@ -83,8 +81,7 @@ Let's take a look at a case statement in byte code:
 ```
 
 
-There is pretty much to do in one line assuming that we want to check if our case is hit. So we put a breakpoint in our case line. And what happens? It is hit every time a condition is being checked!
-Why? Checking a condition is also in our line - so tooling gets information "I was there".
+There is a lot to do in one line if we assume that we want to check if our case is hit. So, we put a breakpoint in our case line. And what happens? It is hit every time a condition is checked! Why? Checking a condition is also in our line, so tooling gets the information: "I was there".
 
 ## Conclusion
 
@@ -100,4 +97,4 @@ foo match {
 }  
 ```
 
-Then when we place breakpoint inside case body - it will be hit only when the body is about to be invoked.
+When we place a breakpoint inside a case body, it will be hit only when the body is about to be invoked.
